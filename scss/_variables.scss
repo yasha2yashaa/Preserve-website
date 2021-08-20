@@ -46,6 +46,13 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+// custom
+$dark-custom:    #0A0D0C !default;
+$dark-green-custom:    #142621 !default;
+$green-custom:    #214037 !default;
+$light-olive-custom:    #5C7370 !default;
+$lighter-olive-custom:    #7B8C8B !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -67,8 +74,12 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $white !default;
+$secondary:     $dark-custom !default;
+$tertiary:     $dark-green-custom !default;
+$quaternary:     $green-custom !default;
+$quinary:     $light-olive-custom !default;
+$senary:     $lighter-olive-custom !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -81,6 +92,10 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "tertiary":  $tertiary,
+  "quaternary":  $quaternary,
+  "quinary":  $quinary,
+  "senary":  $senary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -416,7 +431,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Jost', sans-serif !default;
+$font-family-light:      'Jost-light', sans-serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -462,7 +478,7 @@ $font-sizes: (
 
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
+$headings-font-family:        $font-family-light !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
