@@ -263,6 +263,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
+$spacer-small: 0.5rem !default;
 $spacers: (
   0: 0,
   1: $spacer * .25,
@@ -270,6 +271,40 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer-small * 6.5,
+  7: $spacer-small * 7.0,
+  8: $spacer-small * 7.5,
+  9: $spacer-small * 8.0,
+  10: $spacer-small * 8.5,
+  11: $spacer-small * 9.0,
+  12: $spacer-small * 9.5,
+  13: $spacer-small * 10,
+  14: $spacer-small * 10.5,
+  16: $spacer-small * 11,
+  17: $spacer-small * 11.5,
+  18: $spacer-small * 12,
+  19: $spacer-small * 12.5,
+  20: $spacer-small * 13,
+  21: $spacer-small * 13.5,
+  22: $spacer-small * 14,
+  23: $spacer-small * 14.5,
+  24: $spacer-small * 15,
+  25: $spacer-small * 15.5,
+  26: $spacer-small * 16,
+  27: $spacer-small * 16.5,
+  28: $spacer-small * 17,
+  29: $spacer-small * 17.5,
+  30: $spacer-small * 18,
+  31: $spacer-small * 18.5,
+  32: $spacer-small * 19,
+  33: $spacer-small * 19.5,
+  34: $spacer-small * 20,
+  35: $spacer-small * 20.5,
+  36: $spacer-small * 21,
+  37: $spacer-small * 21.5,
+  38: $spacer-small * 22,
+  39: $spacer-small * 22.5,
+  40: $spacer-small * 23,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
