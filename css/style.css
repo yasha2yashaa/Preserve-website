@@ -55,6 +55,7 @@
 }
 
 html, body {
+/* background: linear-gradient(to right, #0A0D0C, #214037); */
 background: linear-gradient(to right, #0A0D0C, #214037);
 }
 
@@ -207,7 +208,7 @@ transition: opacity 0.475s ease, transform 1.25s ease;
   50% {
     left: 53%;
     top: 0px;
-    z-index: 3;
+    z-index: 2;
     transform: scale(0.8);
     animation-timing-function: ease;
   }
@@ -230,7 +231,7 @@ transition: opacity 0.475s ease, transform 1.25s ease;
   50% {
     left: 59%;
     top: 0px;
-    z-index: 2;
+    z-index: 1;
     transform: scale(0.65);
     animation-timing-function: ease;
   }
@@ -306,3 +307,66 @@ transition: opacity 0.475s ease, transform 1.25s ease;
   max-width: 465px;
   margin-top: 4px;
 }
+
+#initiatives {
+  min-height: 880px;
+}
+
+#initiatives .container {
+  min-width: 1560px;
+}
+
+
+
+
+#initiatives .initiative.bg-1 {
+  background: url(../img/showcase/orangutan.png);
+  border-radius: 25px 0px 25px 25px;
+}
+
+#initiatives .initiative.bg-2 {
+  background: url(../img/showcase/garbage.png);
+  border-radius: 0px 0px 25px 25px;
+}
+
+#initiatives .initiative.bg-3 {
+  background: url(../img/showcase/ocean.png);
+  border-radius: 0px 0px 25px 25px;
+}
+
+#initiatives .initiative.bg-4 {
+  background: url(../img/showcase/pollution.png);
+  border-radius: 0px 25px 25px 25px;
+}
+
+.initiative {
+  height: 600px;
+  width: 330px;
+  margin-left: 1px;
+  margin-right: 1px;
+  scale: 1.0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  -webkit-transition: transform 1s ease-in-out, margin-left 1s ease-in-out, margin-right 1s ease-in-out;
+  -moz-transition: transform 1s ease-in-out, margin-left 1s ease-in-out, margin-right 1s ease-in-out;
+  -o-transition: transform 1s ease-in-out, margin-left 1s ease-in-out, margin-right 1s ease-in-out;
+  transition: transform 1s ease-in-out, margin-left 1s ease-in-out, margin-right 1s ease-in-out;
+}
+
+.initiative:hover {
+  transform: scale(1.15);
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+@media only screen and (min-width: 1460px) {
+  #initiatives .container .row .w-100 {
+    display: none !important;
+  }
+}
+
+/* #initiatives .initiative:hover {
+  overlay
+} */
+

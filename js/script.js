@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   clickFunction();
 
   carouselFunction();
-  setInterval(carouselFunction, 5000);
+  setInterval(carouselFunction, 6000);
 });
 
 // scrolled to top detector
